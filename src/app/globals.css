@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -110,11 +110,16 @@
   --sidebar-ring: oklch(0.551 0.027 264.364);
 }
 
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
+@theme {
+  --primary: #1c1c22
+  --accent: {
+    DEFAULT: #00ff99,
+    hover: #00e187
   }
+}
+
+@layer base {
   body {
-    @apply bg-background text-foreground;
+    @apply bg-primary text-white leading-loose
   }
 }
