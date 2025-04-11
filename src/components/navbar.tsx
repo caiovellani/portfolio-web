@@ -5,10 +5,10 @@ import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
 
 const navItems = [
-  { name: 'Home' },
-  { name: 'About' },
-  { name: 'Work' },
-  { name: 'Reviews' },
+  { name: 'Início' },
+  { name: 'Sobre' },
+  { name: 'Tecnologias' },
+  { name: 'Projetos' },
 ]
 
 export function Navbar() {
@@ -31,7 +31,7 @@ export function Navbar() {
         )}
       >
         {navItems.map((item) => {
-          const isActive = item.name === 'Home'
+          const isActive = item.name === 'Início'
 
           return (
             <div key={item.name} className="relative">
