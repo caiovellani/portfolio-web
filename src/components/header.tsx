@@ -2,6 +2,8 @@
 
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
+import logoImg from '@/../public/logo2.png'
+import Image from 'next/image'
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -9,7 +11,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 w-full h-20 flex items-center z-40 bg-gradient-to-b from-zinc-900 to-zinc-900/0">
       <div className="max-w-2xl w-full mx-auto px-4 flex justify-between items-center md:px-6 md:grid md:grid-cols-[1fr,3fr,1fr]">
-        <h1>logo</h1>
+        <Image src={logoImg} alt="Logo" height={50} width={50} />
 
         <div className="relative md:justify-self-center">
           <button
