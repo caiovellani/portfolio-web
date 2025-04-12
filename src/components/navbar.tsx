@@ -1,7 +1,9 @@
 'use client'
 
+import { Button } from '@/components/ui/button'
 import clsx from 'clsx'
 import { Menu, X } from 'lucide-react'
+import Link from 'next/link'
 import { useState } from 'react'
 
 const navItems = [
@@ -9,6 +11,7 @@ const navItems = [
   { name: 'Sobre' },
   { name: 'Tecnologias' },
   { name: 'Projetos' },
+  { name: 'Contato', type: 'button' },
 ]
 
 export function Navbar() {
@@ -30,25 +33,38 @@ export function Navbar() {
           isOpen && 'opacity-100 scale-100 visible'
         )}
       >
-        {navItems.map((item) => {
-          const isActive = item.name === 'Início'
+        {navItems.map((nav) => {
+          const isActive = nav.name === 'Início'
 
           return (
-            <div key={item.name} className="relative">
+            <div key={nav.name} className="relative">
               {isActive && (
-                <span className="absolute top-0 left-0 right-0 h-9 bg-white rounded-lg -z-10 transition-all duration-500" />
+                <span className="absolute top-0 left-0 right-0 h-9 bg-white rounded-lg -z-10 transition-all duration-300"></span>
               )}
-              <a
-                href="#"
-                className={clsx(
-                  'grid items-center h-9 px-4 text-sm font-medium tracking-wide transition-colors',
-                  isActive
-                    ? 'text-zinc-900'
-                    : 'text-zinc-50/50 hover:text-zinc-50'
-                )}
-              >
-                {item.name}
-              </a>
+
+              {nav.type === 'button' ? (
+                <button
+                  onClick={() => {}}
+                  className={clsx(
+                    'grid items-center cursor-pointer h-9 px-4 text-sm font-medium tracking-wide transition-colors md:hidden text-zinc-50/50 hover:text-zinc-50',
+                    isActive ? 'text-zinc-900' : 'text-zinc-50'
+                  )}
+                >
+                  {nav.name}
+                </button>
+              ) : (
+                <Link
+                  href="#"
+                  className={clsx(
+                    'grid items-center h-9 px-4 text-sm font-medium tracking-wide transition-colors',
+                    isActive
+                      ? 'text-zinc-900'
+                      : 'text-zinc-50/50 hover:text-zinc-50'
+                  )}
+                >
+                  {nav.name}
+                </Link>
+              )}
             </div>
           )
         })}
