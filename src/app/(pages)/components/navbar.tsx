@@ -26,7 +26,7 @@ export function Navbar() {
       </button>
       <nav
         className={clsx(
-          `absolute top-full mt-2 right-0 min-w-40 p-2 rounded-2xl ring-inset ring-1 ring-zinc-50/5 bg-zinc-900/80 isolate
+          `absolute top-full mt-2 right-0 min-w-40 p-2 rounded-2xl ring-inset ring-1 ring-zinc-50/5 bg-zinc-900 isolate
            transition-all duration-300 scale-90 opacity-0 blur-0 invisible
            md:static md:flex md:items-center md:mt-0 md:opacity-100 md:scale-100 md:visible md:transition-none`,
           isOpen && 'opacity-100 scale-100 visible'
@@ -38,14 +38,14 @@ export function Navbar() {
           return (
             <div key={nav.name} className="relative">
               {isActive && (
-                <span className="absolute top-0 left-0 right-0 h-9 bg-white rounded-lg -z-10 transition-all duration-300"></span>
+                <span className="absolute top-0 left-0 right-0 h-9 bg-accent rounded-lg -z-10 transition-all duration-300" />
               )}
 
               {nav.type === 'button' ? (
                 <button
                   onClick={() => {}}
                   className={clsx(
-                    'grid items-center cursor-pointer h-9 px-4 text-sm font-medium tracking-wide transition-colors md:hidden text-zinc-50/50 hover:text-zinc-50',
+                    'grid items-center cursor-pointer h-9 px-4 text-sm font-medium tracking-wide transition-colors md:hidden text-zinc-50/50 hover:text-hover',
                     isActive ? 'text-zinc-900' : 'text-zinc-50'
                   )}
                 >
@@ -58,7 +58,7 @@ export function Navbar() {
                     'grid items-center h-9 px-4 text-sm font-medium tracking-wide transition-colors',
                     isActive
                       ? 'text-zinc-900'
-                      : 'text-zinc-50/50 hover:text-zinc-50'
+                      : 'text-zinc-50/50 hover:text-hover'
                   )}
                 >
                   {nav.name}
