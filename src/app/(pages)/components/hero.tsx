@@ -1,6 +1,8 @@
 import { Photo } from '@/app/(pages)/components/photo'
 import { Social } from '@/app/(pages)/components/socials'
+import { Stats } from '@/app/(pages)/components/stats'
 import { Button } from '@/components/ui/button'
+
 import { Download } from 'lucide-react'
 
 export function Hero() {
@@ -17,7 +19,7 @@ export function Hero() {
               I excel at crafting elegant digital experiences and I am
               proficient in various programming languages and technologies
             </p>
-            <div className="flex items-center gap-2 -mt-6 mb-4">
+            <div className="flex items-center gap-2 -mt-6 mb-4 justify-center xl:justify-start">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
               <span className="text-white/80 text-sm">Available to work</span>
             </div>
@@ -43,6 +45,7 @@ export function Hero() {
           </div>
         </div>
       </div>
+      <Stats />
     </section>
   )
 }
