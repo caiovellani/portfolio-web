@@ -33,7 +33,7 @@ export function Hero() {
               <div className="mb-8 xl:mb-0">
                 <Social
                   containerStyles="flex gap-6"
-                  iconStyles="w-9 h-9 border border-hover/80 rounded-full flex justify-center items-center text-hover/80 hover:text-accent hover:transition-all duration-500"
+                  iconStyles="w-9 h-9 border border-hover/80 rounded-full flex justify-center items-center text-hover/80 hover:text-accent hover:transition-all duration-500 hover:bg-accent/20"
                 />
               </div>
             </div>
