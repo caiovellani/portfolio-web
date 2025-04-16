@@ -46,9 +46,10 @@ export function Photo() {
           src={imgCaio}
           alt="Foto ilustrativa sobre mim"
           priority
+          height={400}
+          width={400}
           quality={100}
-          fill
-          className="object-contain"
+          className="object-contain mx-3 my-6"
         />
       </motion.div>
     </div>
