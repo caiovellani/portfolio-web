@@ -8,8 +8,18 @@
 }
 
 @layer base {
+  html,
   body {
-    @apply bg-background text-white leading-loose;
+    /* TODO: VER OVERFLOW NO FINAL DO PROJETO */
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    @apply bg-background text-white h-screen w-screen leading-loose bg-[radial-gradient(ellipse_80%_80%_at_50%_-35%,rgba(120,119,198,0.3),rgba(255,255,255,0))];
 
     .h1 {
       @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
@@ -19,6 +29,27 @@
     }
     .h3 {
       @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
+    }
+
+    .bg-grid {
+      background-image: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0.05) 1px,
+          transparent 1px
+        ),
+        linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0.05) 1px,
+          transparent 1px
+        );
+      background-size: 40px 40px;
+      opacity: 0.2;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
     }
   }
 }
