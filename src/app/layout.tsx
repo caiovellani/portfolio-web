@@ -1,12 +1,18 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import { JetBrains_Mono } from 'next/font/google'
+import { JetBrains_Mono, Poppins } from 'next/font/google'
 import Header from '@/app/(pages)/components/header'
-import { Navbar } from '@/app/(pages)/components/navbar'
 
-const jetBrains = JetBrains_Mono({
+const jetbrains = JetBrains_Mono({
   subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
+  variable: '--font-jetbrains',
+})
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-poppins',
 })
 
 export const metadata: Metadata = {
@@ -20,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-br" className={jetBrains.className}>
+    <html lang="pt-br" className={`${jetbrains.variable} ${poppins.variable}`}>
       <body>
         <Header />
         {children}

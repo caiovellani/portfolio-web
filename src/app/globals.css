@@ -51,4 +51,19 @@
       z-index: -1;
     }
   }
+
+  @layer base {
+    :root {
+      --font-jetbrains: var(--font-jetbrains);
+      --font-poppins: var(--font-poppins);
+    }
+
+    .font-jetbrains {
+      font-family: var(--font-jetbrains), monospace;
+    }
+
+    .font-poppins {
+      font-family: var(--font-poppins), sans-serif;
+    }
+  }
 }

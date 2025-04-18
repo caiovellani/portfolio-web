@@ -86,21 +86,21 @@ const techs = [
 
 export function Techs() {
   return (
-    <section className="min-h-screen w-full flex items-center justify-center px-4 py-12">
+    <section className="min-h-screen w-full flex items-center justify-center px-4 py-12 font-poppins">
       <div className="absolute inset-0 z-0 bg-grid pointer-events-none" />
 
-      <div className="container max-w-6xl flex flex-col items-center justify-center mx-auto gap-6">
+      <div className="container max-w-6xl flex flex-col items-center justify-center mx-auto">
         <div className="pt-10 pb-24 text-center px-2">
           <h1 className="text-5xl sm:text-5xl xl:text-[80px] leading-tight font-semibold">
             Essential Tools I use
           </h1>
-          <p className="text-white/80 text-base sm:text-base mt-2">
+          <p className="text-white/80 text-base sm:text-base mt-4">
             Discover the powerful tools and technologies I use to build
             exceptional, high-performance websites and applications.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 w-full mt-4">
+        <div className="grid grid-cols-2 xl:grid-cols-4 gap-3 w-full">
           {techs.map((tech, index) => (
             <TechsStack
               key={index}

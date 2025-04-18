@@ -18,7 +18,7 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className="relative md:justify-self-center">
+    <div className="relative md:justify-self-center font-poppins">
       <div className="bg-grid absolute top-0 left-0 right-0 bottom-0 z-[-1]" />
 
       <button

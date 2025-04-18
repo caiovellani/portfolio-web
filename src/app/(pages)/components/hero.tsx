@@ -7,7 +7,10 @@ import { Download } from 'lucide-react'
 
 export function Hero() {
   return (
-    <section id="hero" className="h-full relative overflow-hidden px-4">
+    <section
+      id="hero"
+      className="h-full relative overflow-hidden px-4 font-poppins"
+    >
       <div className="absolute inset-0 z-0 bg-grid pointer-events-none" />
 
       <div className="container h-full pt-8 mx-auto">
