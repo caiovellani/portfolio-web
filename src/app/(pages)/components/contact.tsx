@@ -4,7 +4,7 @@ import { Textarea } from '@/components/ui/textarea'
 
 export function Contact() {
   return (
-    <section id="hero" className="h-full relative overflow-hidden px-4 flex">
+    <section id="contact" className="h-full relative overflow-hidden px-4 flex">
       <div className="absolute inset-0 z-0 bg-grid pointer-events-none" />
 
       <div className="container h-full pt-8 flex flex-col items-center justify-center mx-auto gap-6">
@@ -39,7 +39,10 @@ export function Contact() {
             className="rounded-lg focus-visible:outline-none border border-accent focus-visible:ring-1 focus-visible:ring-accent focus:ring-0 focus:outline-none xl:h-[300px]"
           />
 
-          <Button className="w-full border hover:bg-hover border-accent rounded-lg bg-accent text-black">
+          <Button
+            type="submit"
+            className="w-full border hover:bg-hover border-accent rounded-lg bg-accent text-black"
+          >
             Send
           </Button>
         </div>
