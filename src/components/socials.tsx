@@ -3,10 +3,10 @@ import Link from 'next/link'
 import { Github, Linkedin, Twitter, Instagram } from 'lucide-react'
 
 const socials = [
-  { icon: <Github />, path: '' },
-  { icon: <Linkedin />, path: '' },
-  { icon: <Twitter />, path: '' },
-  { icon: <Instagram />, path: '' },
+  { icon: <Github />, path: 'https://github.com/caiovellani' },
+  { icon: <Linkedin />, path: 'https://www.linkedin.com/in/caiovborges/' },
+  { icon: <Twitter />, path: 'https://x.com/cvellani_' },
+  { icon: <Instagram />, path: 'https://www.instagram.com/vellanicaio/' },
 ]
 
 type SocialProps = {
@@ -19,7 +19,12 @@ export function Social({ containerStyles, iconStyles }: SocialProps) {
     <div className={containerStyles}>
       {socials.map((item, index) => {
         return (
-          <Link key={index} href={item.path} className={iconStyles}>
+          <Link
+            target="_blank"
+            key={index}
+            href={item.path}
+            className={iconStyles}
+          >
             {item.icon}
           </Link>
         )

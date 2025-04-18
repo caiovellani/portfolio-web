@@ -1,6 +1,6 @@
-import { Photo } from '@/app/(pages)/components/photo'
-import { Social } from '@/app/(pages)/components/socials'
-import { Stats } from '@/app/(pages)/components/stats'
+import { Photo } from '@/components/photo'
+import { Social } from '@/components/socials'
+import { Stats } from '@/components/stats'
 import { Button } from '@/components/ui/button'
 
 import { Download } from 'lucide-react'

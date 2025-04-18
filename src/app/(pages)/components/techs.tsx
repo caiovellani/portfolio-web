@@ -86,7 +86,10 @@ const techs = [
 
 export function Techs() {
   return (
-    <section className="min-h-screen w-full flex items-center justify-center px-4 py-12 font-poppins">
+    <section
+      id="techs"
+      className="min-h-screen w-full flex items-center justify-center px-4 py-12 font-poppins"
+    >
       <div className="absolute inset-0 z-0 bg-grid pointer-events-none" />
 
       <div className="container max-w-6xl flex flex-col items-center justify-center mx-auto">
