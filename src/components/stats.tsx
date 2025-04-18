@@ -41,7 +41,7 @@ export function Stats() {
                 <p
                   className={`${
                     item.text.length < 15 ? 'max-w-[100px]' : 'max-w-[150px]'
-                  } leading-tight text-white/80`}
+                  } leading-tight text-zinc-50/80`}
                 >
                   {item.text}
                 </p>

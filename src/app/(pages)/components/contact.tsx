@@ -15,7 +15,7 @@ export function Contact() {
             <h1 className="text-[48px] xl:text-[80px] leading-[1.1] font-semibold text-center">
               Contato
             </h1>
-            <p className="text-center font-poppins text-white/80 mt-4">
+            <p className="text-center font-poppins text-zinc-50/60 mt-4">
               Feel free to reach out if you have any questions or if there's an
               opportunity where I can add value!
             </p>
