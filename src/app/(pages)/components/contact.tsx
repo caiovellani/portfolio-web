@@ -18,28 +18,28 @@ export function Contact() {
           </p>
         </div>
 
-        <div className="w-[388px] bg-[#18181B] rounded-2xl px-4 pt-6 gap-4 flex flex-col">
+        <div className="w-[450px] xl:w-[500px] xl:h-[400px] bg-[#18181B] rounded-2xl p-3 gap-2 xl:gap-3 flex flex-col">
           <Input
-            className="rounded-lg border px-4 border-accent"
+            className="rounded-lg focus-visible:outline-none border border-accent focus-visible:ring-1 focus-visible:ring-accent focus:ring-0 focus:outline-none xl:p-5"
             placeholder="Your name"
           />
 
           <Input
-            className="rounded-lg border px-4 border-accent"
+            className="rounded-lg focus-visible:outline-none border border-accent focus-visible:ring-1 focus-visible:ring-accent focus:ring-0 focus:outline-none xl:p-5"
             placeholder="Your email"
           />
 
           <Input
-            className="rounded-lg border px-4 border-accent"
+            className="rounded-lg focus-visible:outline-none border border-accent focus-visible:ring-1 focus-visible:ring-accent focus:ring-0 focus:outline-none xl:p-5"
             placeholder="Your subject"
           />
 
           <Textarea
             placeholder="Message"
-            className="rounded-lg border border-accent px-4"
+            className="rounded-lg focus-visible:outline-none border border-accent focus-visible:ring-1 focus-visible:ring-accent focus:ring-0 focus:outline-none xl:h-[300px]"
           />
 
-          <Button className="w-full border border-accent rounded-lg bg-accent text-black">
+          <Button className="w-full border hover:bg-hover border-accent rounded-lg bg-accent text-black">
             Send
           </Button>
         </div>
