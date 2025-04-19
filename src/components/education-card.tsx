@@ -1,3 +1,6 @@
+'use client'
+import { useState } from 'react'
+
 type EducationCardProps = {
   photo: string
   name: string
@@ -13,6 +16,8 @@ export function EducationCard({
   time,
   description,
 }: EducationCardProps) {
+  const [expanded, setExpanded] = useState(false)
+
   return (
     <div className="flex items-center justify-center p-4">
       <div className="group flex flex-col gap-4 mt-20 w-full max-w-3xl border border-accent rounded-2xl p-4 bg-[#18181B] transition-all duration-500 hover:scale-[1.01]">
@@ -31,10 +36,18 @@ export function EducationCard({
         <div>
           <p className="text-zinc-100/60 font-medium">Resume:</p>
           <p
-            className={`mt-2 text-base leading-relaxed text-zinc-200 line-clamp-3 group-hover:line-clamp-none transition-all duration-300`}
+            className={`mt-2 text-base leading-relaxed text-zinc-200 ${
+              expanded ? '' : 'line-clamp-3'
+            } group-hover:line-clamp-none transition-all duration-300`}
           >
             {description}
           </p>
+          <button
+            className="mt-2 text-sm text-accent font-medium md:hidden"
+            onClick={() => setExpanded(!expanded)}
+          >
+            {expanded ? 'Ver menos' : 'Ver mais'}
+          </button>
         </div>
       </div>
     </div>
