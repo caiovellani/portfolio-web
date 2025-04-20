@@ -2,6 +2,7 @@ import { Photo } from '@/components/photo'
 import { Social } from '@/components/socials'
 import { Stats } from '@/components/stats'
 import { Button } from '@/components/ui/button'
+import { Icon } from '@iconify/react'
 
 import { Download } from 'lucide-react'
 
@@ -35,7 +36,10 @@ export function Hero() {
                 className="p-2 rounded-3xl gap-2 border-accent hover:bg-accent/20 cursor-pointer"
               >
                 <span className="text-accent">Download CV</span>
-                <Download className="w-6 h-6 text-accent" />
+                <Icon
+                  icon="line-md:download-loop"
+                  className="text-accent size-6"
+                />
               </Button>
               <div className="mb-8 xl:mb-0">
                 <Social

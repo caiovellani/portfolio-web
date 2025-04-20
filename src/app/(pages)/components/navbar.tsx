@@ -4,6 +4,7 @@ import clsx from 'clsx'
 import { Menu, X } from 'lucide-react'
 import Link from 'next/link'
 import { useState } from 'react'
+import { Icon } from '@iconify/react'
 
 const navItems = [
   { name: 'Sobre' },
@@ -25,7 +26,15 @@ export function Navbar() {
         onClick={() => setIsOpen(!isOpen)}
         className="w-10 md:hidden h-10 grid place-items-center bg-zinc-50/10 rounded-xl ring-inset ring-zinc-50/[0.02] backdrop-blur-2xl hover:bg-zinc-50/15 transition-[transform,background-color] active:scale-95"
       >
-        {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+        {isOpen ? (
+          <Icon icon="line-md:close-small" width={24} height={24} />
+        ) : (
+          <Icon
+            icon="line-md:close-to-menu-alt-transition"
+            width={24}
+            height={24}
+          />
+        )}
       </button>
       <nav
         className={clsx(

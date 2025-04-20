@@ -1,4 +1,4 @@
-import { ArrowRightIcon } from 'lucide-react'
+import { Icon } from '@iconify/react'
 
 type ProjectCardProps = {
   projectPhoto: string
@@ -36,7 +36,7 @@ export function ProjectCard({
           className="text-accent font-semibold flex items-center justify-center gap-2"
         >
           Code
-          <ArrowRightIcon className="w-5 h-5" />
+          <Icon icon="line-md:arrow-right" width={24} height={24} />
         </a>
       </div>
     </div>
