@@ -6,7 +6,7 @@ import imgCaio from '@/../public/caio.png'
 
 export function Photo() {
   return (
-    <div className="relative w-[300px] h-[300px] xl:w-[380px] xl:h-[380px] flex items-center justify-center pointer-events-none">
+    <div className="relative w-[300px] h-[300px] xl:w-[380px] xl:h-[380px] flex items-center justify-center pointer-events-none overflow-hidden p-6">
       <motion.svg
         className="absolute w-full h-full"
         fill="transparent"
@@ -16,7 +16,7 @@ export function Photo() {
         <motion.circle
           cx="253"
           cy="253"
-          r="250"
+          r="220"
           stroke="#00FF99"
           strokeWidth="6"
           strokeLinecap="round"
@@ -27,7 +27,7 @@ export function Photo() {
             rotate: [120, 360],
           }}
           transition={{
-            duration: 20,
+            duration: 12,
             repeat: Infinity,
             repeatType: 'reverse',
           }}

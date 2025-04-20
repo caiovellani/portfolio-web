@@ -10,7 +10,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="h-full relative overflow-hidden px-4 font-poppins"
+      className="h-full relative overflow-hidden font-poppins px-6"
     >
       <div className="absolute inset-0 z-0 bg-grid pointer-events-none" />
 
