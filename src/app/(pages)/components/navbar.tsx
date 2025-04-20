@@ -7,12 +7,12 @@ import { useState } from 'react'
 import { Icon } from '@iconify/react'
 
 const navItems = [
-  { name: 'Sobre' },
+  { name: 'About' },
   { name: 'Techs' },
-  { name: 'Experiências' },
-  { name: 'Projetos' },
-  { name: 'Educação' },
-  { name: 'Contato', type: 'button' },
+  { name: 'Education' },
+  { name: 'Experience' },
+  { name: 'Projects' },
+  { name: 'Contact', type: 'button' },
 ]
 
 export function Navbar() {

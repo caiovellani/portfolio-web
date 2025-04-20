@@ -22,7 +22,7 @@ export default function Header() {
               variant="ghost"
               className="rounded-xl cursor-pointer bg-accent text-zinc-900 p-4 text-sm font-medium h-9 items-center w-full ring-1 ring-zinc-50/5 ring-inset transition-[background-color] hover:bg-zinc-50/50"
             >
-              Contato
+              Contact
             </Button>
           </div>
         </div>
