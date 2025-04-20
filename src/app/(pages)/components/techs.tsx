@@ -103,7 +103,7 @@ export function Techs() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 xl:grid-cols-4 gap-3 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3 w-full">
           {techs.map((tech, index) => (
             <TechsStack
               key={index}
