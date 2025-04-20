@@ -1,5 +1,9 @@
+'use client'
+
 import { TechsStack } from '@/components/techs-stack'
+import { Button } from '@/components/ui/button'
 import { Icon } from '@iconify/react'
+import { useEffect, useState } from 'react'
 
 const techs = [
   {
@@ -85,10 +89,30 @@ const techs = [
 ]
 
 export function Techs() {
+  const [expanded, setExpanded] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+  const [hasMounted, setHasMounted] = useState(false)
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const checkIsMobile = () => setIsMobile(window.innerWidth < 768)
+
+      checkIsMobile()
+      window.addEventListener('resize', checkIsMobile)
+      setHasMounted(true)
+
+      return () => window.removeEventListener('resize', checkIsMobile)
+    }
+  }, [])
+
+  if (!hasMounted) return null // avoid rendering in SSR
+
+  const visibleTechs = isMobile && !expanded ? techs.slice(0, 5) : techs
+
   return (
     <section
       id="techs"
-      className="min-h-screen w-full flex items-center justify-center px-4 py-12 font-poppins"
+      className="min-h-screen w-full flex items-center justify-center px-6 py-8 overflow-hidden font-poppins"
     >
       <div className="absolute inset-0 z-0 bg-grid pointer-events-none" />
 
@@ -104,7 +128,7 @@ export function Techs() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3 w-full">
-          {techs.map((tech, index) => (
+          {visibleTechs.map((tech, index) => (
             <TechsStack
               key={index}
               name={tech.name}
@@ -113,6 +137,17 @@ export function Techs() {
             />
           ))}
         </div>
+
+        {isMobile && techs.length > 5 && (
+          <div className="w-full flex justify-end mt-4 md:hidden">
+            <Button
+              onClick={() => setExpanded(!expanded)}
+              className="text-sm text-accent font-medium md:hidden rounded-2xl hover:text-hover transition-all duration-300"
+            >
+              {expanded ? 'Ver menos' : 'Ver mais'}
+            </Button>
+          </div>
+        )}
       </div>
     </section>
   )
