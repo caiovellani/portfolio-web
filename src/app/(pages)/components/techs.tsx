@@ -121,7 +121,7 @@ export function Techs() {
           <h1 className="text-5xl sm:text-5xl xl:text-[80px] leading-tight font-semibold">
             Essential Tools I use
           </h1>
-          <p className="text-zinc-50/60 font-medium leading-tight mt-4">
+          <p className="text-zinc-50/60 font-medium leading-tight mt-4 md:leading-relaxed">
             Discover the powerful tools and technologies I use to build
             exceptional, high-performance websites and applications.
           </p>

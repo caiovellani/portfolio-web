@@ -8,7 +8,7 @@ export function Projects() {
     >
       <div className="flex flex-col items-center justify-center p-4">
         <h1 className="text-[48px] font-bold xl:text-[80px]">Projects</h1>
-        <p className="text-zinc-50/60 text-center text-base font-medium leading-tight">
+        <p className="text-zinc-50/60 text-center text-base font-medium leading-tight md:leading-relaxed">
           I have worked on a wide range of web application projects. Here are
           some of my projects.
         </p>

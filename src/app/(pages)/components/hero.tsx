@@ -21,7 +21,7 @@ export function Hero() {
             <h1 className="h1 mb-6">
               Hello I'm <br /> <span className="text-accent">Caio Vellani</span>
             </h1>
-            <p className="max-w-[500px] text-zinc-50/60 font-medium leading-tight mb-10">
+            <p className="max-w-[500px] text-zinc-50/60 font-medium leading-tight mb-10 md:leading-relaxed">
               I excel at crafting elegant digital experiences and I am
               proficient in various programming languages and technologies
             </p>
