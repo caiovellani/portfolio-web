@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import { useState } from 'react'
 
 type EducationCardProps = {
@@ -19,11 +20,17 @@ export function EducationCard({
   const [expanded, setExpanded] = useState(false)
 
   return (
-    <div className="flex items-center justify-center p-4">
-      <div className="group flex flex-col gap-4 mt-20 w-full max-w-3xl border border-accent rounded-2xl p-4 bg-[#18181B] transition-all duration-500 hover:scale-[1.01]">
+    <div className="flex items-center justify-center">
+      <div className="group flex flex-col gap-4 mt-9 w-full max-w-3xl border border-accent rounded-2xl p-4 bg-[#18181B] transition-all duration-500 hover:scale-[1.01]">
         <div className="flex gap-4 items-start">
           <div className="w-14 h-14 rounded-xl bg-[#242938] flex items-center justify-center text-white font-bold text-xs">
-            {photo}
+            <Image
+              src={photo}
+              width={54}
+              height={54}
+              alt={`${name}`}
+              className="rounded-xl"
+            />
           </div>
 
           <div className="flex flex-col">
