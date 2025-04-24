@@ -32,7 +32,7 @@ export function Education() {
   return (
     <section
       id="education"
-      className="min-h-screen w-full container mx-auto items-center p-6"
+      className="min-h-screen w-full container mx-auto items-center p-4"
     >
       <div className="flex flex-col items-center justify-center p-4">
         <h1 className="text-[48px] font-bold xl:text-[80px]">Education</h1>
