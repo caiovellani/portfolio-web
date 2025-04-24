@@ -35,7 +35,7 @@ export function EducationCard({
 
           <div className="flex flex-col">
             <h2 className="font-bold text-lg text-white">{name}</h2>
-            <p className="text-sm text-zinc-300">{education}</p>
+            <p className="text-sm text-zinc-300 font-medium">{education}</p>
             <span className="text-sm text-zinc-500">{time}</span>
           </div>
         </div>
