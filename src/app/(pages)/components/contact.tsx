@@ -6,7 +6,7 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="h-full relative overflow-hidden px-4 flex font-poppins"
+      className="h-full relative overflow-hidden p-4 flex font-poppins"
     >
       <div className="absolute inset-0 z-0 bg-grid pointer-events-none" />
       <div className="container mx-auto min-h-screen">
@@ -21,30 +21,30 @@ export function Contact() {
             </p>
           </div>
 
-          <div className="w-[450px] xl:w-[550px] xl:h-[450px] bg-[#18181B] rounded-2xl p-3 gap-2 xl:gap-3 flex flex-col">
+          <div className="w-[360px] h-dvw xl:w-[550px] xl:h-[450px] bg-[#18181B] rounded-2xl p-2 gap-3 xl:gap-3 flex flex-col">
             <Input
-              className="rounded-lg focus-visible:outline-none border border-accent focus-visible:ring-1 focus-visible:ring-accent focus:ring-0 focus:outline-none xl:p-5"
+              className="rounded-lg focus-visible:outline-none border border-accent focus-visible:ring-1 focus-visible:ring-accent focus:ring-0 focus:outline-none p-5"
               placeholder="Your name"
             />
 
             <Input
-              className="rounded-lg focus-visible:outline-none border border-accent focus-visible:ring-1 focus-visible:ring-accent focus:ring-0 focus:outline-none xl:p-5"
+              className="rounded-lg focus-visible:outline-none border border-accent focus-visible:ring-1 focus-visible:ring-accent focus:ring-0 focus:outline-none p-5"
               placeholder="Your email"
             />
 
             <Input
-              className="rounded-lg focus-visible:outline-none border border-accent focus-visible:ring-1 focus-visible:ring-accent focus:ring-0 focus:outline-none xl:p-5"
+              className="rounded-lg focus-visible:outline-none border border-accent focus-visible:ring-1 focus-visible:ring-accent focus:ring-0 focus:outline-none p-5"
               placeholder="Your subject"
             />
 
             <Textarea
               placeholder="Message"
-              className="rounded-lg focus-visible:outline-none border border-accent focus-visible:ring-1 focus-visible:ring-accent focus:ring-0 focus:outline-none xl:h-[300px]"
+              className="rounded-lg focus-visible:outline-none border border-accent focus-visible:ring-1 focus-visible:ring-accent focus:ring-0 focus:outline-none xl:h-[300px] h-full"
             />
 
             <Button
               type="submit"
-              className="w-full border hover:bg-hover border-accent rounded-lg bg-accent text-black"
+              className="w-full border p-5 hover:bg-hover border-accent rounded-lg bg-accent text-black"
             >
               Send
             </Button>
