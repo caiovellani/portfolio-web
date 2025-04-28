@@ -1,10 +1,36 @@
+'use client'
+
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 
+import { useForm } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { z } from 'zod'
+import emailjs from '@emailjs/browser'
+import { useRef } from 'react'
+
+const contactSchema = z.object({
+  name: z.string().min(1, 'Name is required'),
+  email: z.string().email('Invalid email').min(1, 'Email is required'),
+  subject: z.string().min(1, 'Subject is required'),
+  message: z.string().min(1, 'Message is required'),
+})
+
+type ContactFormData = z.infer<typeof contactSchema>
+
 export function Contact() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+    reset,
+  } = useForm<ContactFormData>({
+    resolver: zodResolver(contactSchema),
+  })
+
   return (
-    <section
+    <form
       id="contact"
       className="h-full relative overflow-hidden p-4 flex font-poppins"
     >
@@ -51,6 +77,6 @@ export function Contact() {
           </div>
         </div>
       </div>
-    </section>
+    </form>
   )
 }
