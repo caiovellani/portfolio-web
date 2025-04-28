@@ -4,7 +4,7 @@ import { Stats } from '@/components/stats'
 import { Button } from '@/components/ui/button'
 import { Icon } from '@iconify/react'
 
-import { Download } from 'lucide-react'
+import Link from 'next/link'
 
 export function Hero() {
   return (
@@ -30,17 +30,19 @@ export function Hero() {
               <span className="text-white/80 text-sm">Available to work</span>
             </div>
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="lg"
-                className="p-2 rounded-3xl gap-2 border-accent hover:bg-accent/20 cursor-pointer"
-              >
-                <span className="text-accent">Download CV</span>
-                <Icon
-                  icon="line-md:download-loop"
-                  className="text-accent size-6"
-                />
-              </Button>
+              <Link href="/caiovellani.pdf" download>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="p-2 rounded-3xl gap-2 border-accent hover:bg-accent/20 cursor-pointer"
+                >
+                  <span className="text-accent">Download CV</span>
+                  <Icon
+                    icon="line-md:download-loop"
+                    className="text-accent size-6"
+                  />
+                </Button>
+              </Link>
               <div className="mb-8 xl:mb-0">
                 <Social
                   containerStyles="flex gap-6"
