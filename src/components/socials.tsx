@@ -1,6 +1,5 @@
 import Link from 'next/link'
 
-import { Github, Linkedin, Twitter, Instagram } from 'lucide-react'
 import { Icon } from '@iconify/react'
 
 const socials = [

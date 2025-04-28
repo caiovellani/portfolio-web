@@ -1,5 +1,4 @@
 import { EducationCard } from '@/components/education-card'
-import Image from 'next/image'
 
 const educations = [
   {
