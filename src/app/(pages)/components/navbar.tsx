@@ -6,12 +6,12 @@ import { useState } from 'react'
 import { Icon } from '@iconify/react'
 
 const navItems = [
-  { name: 'About' },
-  { name: 'Techs' },
-  { name: 'Education' },
-  { name: 'Experience' },
-  { name: 'Projects' },
-  { name: 'Contact', type: 'button' },
+  { name: 'About', href: '#hero' },
+  { name: 'Techs', href: '#techs' },
+  { name: 'Education', href: '#education' },
+  { name: 'Experience', href: '#experience' },
+  { name: 'Projects', href: '#projects' },
+  { name: 'Contact', type: 'button', href: '#contact' },
 ]
 
 export function Navbar() {
@@ -64,7 +64,7 @@ export function Navbar() {
                 </button>
               ) : (
                 <Link
-                  href="#"
+                  href={nav.href}
                   className={clsx(
                     'grid items-center h-9 px-4 text-sm font-medium tracking-wide transition-colors cursor-pointer active:text-hover',
                     isActive
