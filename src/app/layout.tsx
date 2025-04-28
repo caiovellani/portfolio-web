@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { JetBrains_Mono, Poppins } from 'next/font/google'
 import Header from '@/app/(pages)/components/header'
+import { ToasterProvider } from '@/components/toast/toast-provider'
 
 const jetbrains = JetBrains_Mono({
   subsets: ['latin'],
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <ToasterProvider />
       </body>
     </html>
   )
