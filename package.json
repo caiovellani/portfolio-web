@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@hookform/resolvers": "^5.0.1",
     "@iconify/react": "^5.2.1",
     "@radix-ui/react-dialog": "^1.1.7",
