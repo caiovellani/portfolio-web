@@ -57,7 +57,6 @@ export function Contact() {
       id="contact"
       className="h-full relative overflow-hidden flex font-poppins"
     >
-      <div className="absolute inset-0 z-0 bg-grid pointer-events-none" />
       <div className="flex flex-col items-center justify-center min-h-screen p-4 w-full">
         <div className="p-4 mb-12">
           <h1 className="text-[48px] xl:text-[80px] leading-[1.1] font-semibold text-center">
@@ -69,7 +68,7 @@ export function Contact() {
           </p>
         </div>
 
-        <div className="w-full max-w-[360px] xl:max-w-[550px] bg-[#18181B] rounded-2xl p-6 gap-4 flex flex-col">
+        <div className="w-full max-w-[360px] xl:max-w-[550px] bg-[#18181B] rounded-2xl p-2 gap-4 flex flex-col">
           <Input
             {...register('name')}
             placeholder="Your name"
@@ -102,7 +101,7 @@ export function Contact() {
           <Textarea
             {...register('message')}
             placeholder="Message"
-            className="rounded-lg border border-accent focus-visible:ring-1 focus-visible:ring-accent transition-all duration-300 placeholder:text-zinc-400 h-32 xl:h-[300px]"
+            className="rounded-lg border border-accent focus-visible:ring-1 focus-visible:ring-accent transition-all duration-300 placeholder:text-zinc-400 h-32 xl:h-[200px]"
           />
           {errors.message && (
             <span className="text-red-500 text-sm">

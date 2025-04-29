@@ -19,8 +19,6 @@ export function Navbar() {
 
   return (
     <div className="relative md:justify-self-center font-poppins">
-      <div className="bg-grid absolute top-0 left-0 right-0 bottom-0 z-[-1]" />
-
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-10 md:hidden h-10 grid place-items-center bg-zinc-50/10 rounded-xl ring-inset ring-zinc-50/[0.02] backdrop-blur-2xl hover:bg-zinc-50/15 transition-[transform,background-color] active:scale-95"

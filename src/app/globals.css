@@ -17,9 +17,12 @@
     padding: 0;
   }
 
-  body {
-    @apply bg-background text-white h-screen w-screen leading-loose bg-[radial-gradient(ellipse_80%_80%_at_50%_-35%,rgba(120,119,198,0.3),rgba(255,255,255,0))];
+  /*
+    <div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+  
+  */
 
+  body {
     .h1 {
       @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
     }
@@ -31,24 +34,35 @@
     }
 
     .bg-grid {
-      background-image: linear-gradient(
-          to right,
-          rgba(255, 255, 255, 0.05) 1px,
-          transparent 1px
-        ),
-        linear-gradient(
-          to bottom,
-          rgba(255, 255, 255, 0.05) 1px,
-          transparent 1px
-        );
-      background-size: 40px 40px;
-      opacity: 0.2;
+      background-image: radial-gradient(#323232 1px, transparent 1px);
+      background-size: 16px 16px;
+      mask-image: radial-gradient(
+        ellipse 50% 50% at 50% 50%,
+        #000 70%,
+        transparent 100%
+      );
+      -webkit-mask-image: radial-gradient(
+        ellipse 50% 50% at 50% 50%,
+        #000 70%,
+        transparent 100%
+      );
+      opacity: 1;
+      pointer-events: none;
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      inset: 0;
       z-index: -1;
+    }
+    @media (max-width: 768px) {
+      .bg-grid {
+        background-size: 16px 16px;
+        opacity: 1;
+        mask-image: radial-gradient(
+          ellipse 50% 50% at 50% 50%,
+          #000,
+          70%,
+          transparent 100%
+        );
+      }
     }
   }
 

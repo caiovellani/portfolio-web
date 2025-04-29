@@ -28,10 +28,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" className={`${jetbrains.variable} ${poppins.variable}`}>
-      <body>
-        <Header />
-        {children}
-        <ToasterProvider />
+      <body className="bg-neutral-900 text-white">
+        <div className="relative">
+          <div className="bg-grid" />
+          <Header />
+          {children}
+          <ToasterProvider />
+        </div>
       </body>
     </html>
   )

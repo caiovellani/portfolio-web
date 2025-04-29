@@ -12,8 +12,6 @@ export function Hero() {
       id="hero"
       className="h-full relative overflow-hidden font-poppins px-6"
     >
-      <div className="absolute inset-0 z-0 bg-grid pointer-events-none" />
-
       <div className="container h-full pt-8 mx-auto">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           <div className="text-center xl:text-left order-2 xl:order-none">

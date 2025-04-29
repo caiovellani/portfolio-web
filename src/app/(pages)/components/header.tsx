@@ -8,8 +8,6 @@ import Link from 'next/link'
 export default function Header() {
   return (
     <header className="relative z-40 h-20 w-full font-poppins">
-      <div className="bg-grid absolute inset-0 z-0 pointer-events-none" />
-
       <div className="relative z-10 p-4 h-full w-full bg-gradient-to-b from-zinc-900 to-zinc-900/0">
         <div className="max-w-6xl mx-auto px-4 h-full flex items-center justify-between">
           <div className="flex items-center gap-2">

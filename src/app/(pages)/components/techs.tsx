@@ -114,8 +114,6 @@ export function Techs() {
       id="techs"
       className="min-h-screen w-full flex items-center justify-center px-6 py-8 overflow-hidden font-poppins"
     >
-      <div className="absolute inset-0 z-0 bg-grid pointer-events-none" />
-
       <div className="container max-w-6xl flex flex-col items-center justify-center mx-auto">
         <div className="pt-10 pb-24 text-center px-2">
           <h1 className="text-5xl sm:text-5xl xl:text-[80px] leading-tight font-semibold">
