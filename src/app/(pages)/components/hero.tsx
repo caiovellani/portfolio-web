@@ -38,19 +38,17 @@ export function Hero() {
             </div>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Link href="/caiovellani.pdf" download>
-                <div className="animate-border-rgb rounded-3xl">
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    className="p-2 rounded-3xl gap-2 border-transparent bg-transparent hover:bg-accent/20 cursor-pointer z-10"
-                  >
-                    <span className="text-accent">Download CV</span>
-                    <Icon
-                      icon="line-md:download-loop"
-                      className="text-accent size-6"
-                    />
-                  </Button>
-                </div>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="p-2 rounded-3xl gap-2 border-hover bg-[##171717] hover:bg-accent/20 cursor-pointer z-10"
+                >
+                  <span className="text-accent">Download CV</span>
+                  <Icon
+                    icon="line-md:download-loop"
+                    className="text-accent size-6"
+                  />
+                </Button>
               </Link>
               <div className="mb-8 xl:mb-0">
                 <Social

@@ -65,23 +65,21 @@ export function Projects() {
           href="https://github.com/caiovellani?tab=repositories"
           className="text-accent font-semibold flex items-center justify-center gap-2"
         >
-          <div className="animate-border-rgb rounded-3xl">
-            <Button
-              variant="outline"
-              size="lg"
-              className="p-2 rounded-3xl gap-2 border-transparent w-fit  bg-transparent hover:bg-accent/10 cursor-pointer z-10"
-            >
-              <span className="text-white font-semibold text-xl">
-                All Projects
-              </span>
-              <Icon
-                icon="line-md:arrow-right"
-                width={24}
-                height={24}
-                className="text-white font-semibold"
-              />
-            </Button>
-          </div>
+          <Button
+            variant="outline"
+            size="lg"
+            className="p-2 rounded-3xl gap-2 border-hover w-fit  bg-[#171717] hover:bg-accent/10 cursor-pointer z-10"
+          >
+            <span className="text-white font-semibold text-xl">
+              All Projects
+            </span>
+            <Icon
+              icon="line-md:arrow-right"
+              width={24}
+              height={24}
+              className="text-white font-semibold"
+            />
+          </Button>
         </Link>
       </div>
 
