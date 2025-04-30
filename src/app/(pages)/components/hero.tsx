@@ -1,3 +1,6 @@
+'use client'
+
+import { useTypewriter } from '@/app/hooks/useTypewriter'
 import { Photo } from '@/components/photo'
 import { Social } from '@/components/socials'
 import { Stats } from '@/components/stats'
@@ -7,6 +10,8 @@ import { Icon } from '@iconify/react'
 import Link from 'next/link'
 
 export function Hero() {
+  const typedName = useTypewriter('Caio Vellani', 150, 3000)
+
   return (
     <section
       id="hero"
@@ -17,7 +22,11 @@ export function Hero() {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Software Developer</span>
             <h1 className="h1 mb-6">
-              Hello I'm <br /> <span className="text-accent">Caio Vellani</span>
+              Hello I'm <br />
+              <span className="text-accent inline-block min-w-[150px]">
+                {typedName}
+                <span className="animate-pulse">|</span>
+              </span>
             </h1>
             <p className="max-w-[500px] text-zinc-50/60 font-medium leading-tight mb-10 md:leading-relaxed">
               I excel at crafting elegant digital experiences and I am
