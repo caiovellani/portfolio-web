@@ -32,6 +32,7 @@ export function ProjectCard({
       <div className="flex justify-end mt-auto">
         <a
           target="_blank"
+          rel="noopener noreferrer"
           href="#"
           className="text-accent font-semibold flex items-center justify-center gap-2"
         >

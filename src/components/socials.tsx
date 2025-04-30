@@ -33,6 +33,7 @@ export function Social({ containerStyles, iconStyles }: SocialProps) {
         return (
           <Link
             target="_blank"
+            rel="noopener noreferrer"
             key={index}
             href={item.path}
             className={iconStyles}
