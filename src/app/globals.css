@@ -7,6 +7,50 @@
   --color-hover: #00e187;
 }
 
+@keyframes border-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@layer utilities {
+  .animate-border-rgb {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    isolation: isolate;
+  }
+
+  .animate-border-rgb::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: inherit;
+    background: conic-gradient(
+      from 90deg at 50% 50%,
+      #00ff99 0%,
+
+      #00ff99 100%
+    );
+    animation: border-spin 5s linear infinite;
+    z-index: -2;
+  }
+
+  .animate-border-rgb::after {
+    content: '';
+    position: absolute;
+    inset: 1px;
+    border-radius: inherit;
+    background: var(--color-background);
+    z-index: -1;
+  }
+}
+
 @layer base {
   html,
   body {
