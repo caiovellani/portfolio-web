@@ -21,7 +21,7 @@ export function EducationCard({
 
   return (
     <div className="flex items-center justify-center">
-      <div className="group flex flex-col gap-4 mt-9 w-full max-w-3xl border border-accent rounded-2xl p-4 bg-[#18181B] transition-transform duration-300 ease-in-out hover:scale-[1.01]">
+      <div className="group animate-border-flow flex flex-col gap-4 mt-9 w-full max-w-3xl border border-transparent rounded-2xl p-4 bg-[#18181B] transition-transform duration-300 ease-in-out hover:scale-[1.01]">
         <div className="flex gap-4 items-start">
           <div className="w-14 h-14 rounded-xl bg-[#242938] flex items-center justify-center text-white font-bold text-xs">
             <Image
