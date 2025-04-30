@@ -100,8 +100,8 @@ export function Contact() {
 
           <Textarea
             {...register('message')}
-            placeholder="Message"
-            className="rounded-lg border border-accent focus-visible:ring-1 focus-visible:ring-accent transition-all duration-300 placeholder:text-zinc-400 h-32 xl:h-[200px]"
+            placeholder="Your Message"
+            className="rounded-lg p-5 border border-accent focus-visible:ring-1 focus-visible:ring-accent transition-all duration-300 placeholder:text-zinc-400 h-32 xl:h-[200px]"
           />
           {errors.message && (
             <span className="text-red-500 text-sm">
