@@ -1,5 +1,4 @@
 'use client'
-import { useState } from 'react'
 
 type ExperienceCardProps = {
   name: string
@@ -16,8 +15,6 @@ export function ExperienceCard({
   description,
   skills,
 }: ExperienceCardProps) {
-  const [expanded, setExpanded] = useState(false)
-
   return (
     <div className="flex items-center justify-center">
       <div className="group flex flex-col gap-4 mt-9 w-full max-w-3xl border border-transparent animate-border-flow rounded-2xl p-4 bg-[#18181B] transition-transform duration-300 hover:scale-[1.01]">
@@ -31,25 +28,13 @@ export function ExperienceCard({
 
         <div>
           <p className="text-zinc-100/60 font-medium">Resume:</p>
-          <p
-            className={`text-base mb-2 leading-relaxed text-zinc-200 transition-[max-height] duration-500 ease-in-out ${
-              expanded ? 'max-h-[1000px]' : 'max-h-[4.5rem]'
-            } group-hover:max-h-[1000px]`}
-          >
+          <p className="text-base leading-relaxed text-zinc-200 mb-2">
             {description}
           </p>
 
           <p className="text-zinc-100/60 font-medium">
-            Skills:{'  '}
-            <span className="text-zinc-200">{skills}</span>
+            Skills: <span className="text-zinc-200">{skills}</span>
           </p>
-
-          <button
-            className="mt-2 text-sm text-accent font-medium md:hidden"
-            onClick={() => setExpanded(!expanded)}
-          >
-            {expanded ? 'Ver menos' : 'Ver mais'}
-          </button>
         </div>
       </div>
     </div>
