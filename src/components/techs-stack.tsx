@@ -6,8 +6,8 @@ type TechsStackProps = {
 
 export function TechsStack({ name, description, icon }: TechsStackProps) {
   return (
-    <div className="w-full">
-      <div className="w-full px-4 py-3 border border-accent rounded-2xl bg-[#18181B] flex gap-4 items-center hover:scale-105 transition-transform duration-200">
+    <div className="relative animated-border p-[2px] rounded-2xl w-full">
+      <div className="w-full px-4 py-3 rounded-2xl bg-[#18181B] flex gap-4 items-center hover:scale-105 transition-transform duration-200">
         <div className="flex items-center justify-center w-11 h-11 rounded-xl bg-[#242938]">
           {icon}
         </div>

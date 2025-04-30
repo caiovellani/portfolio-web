@@ -163,3 +163,47 @@
     z-index: -1;
   }
 }
+
+@layer utilities {
+  @property --angulo {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+  @keyframes Borda {
+    from {
+      --angulo: 0deg;
+    }
+    to {
+      --angulo: 360deg;
+    }
+  }
+
+  .animated-border {
+    position: relative;
+    z-index: 0;
+  }
+
+  .animated-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    background: conic-gradient(
+      from var(--angulo),
+      #00ff99,
+      transparent,
+      #00ff99
+    );
+    border-radius: 1rem;
+    animation: Borda 3s linear infinite;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    z-index: -1;
+  }
+}
