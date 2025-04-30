@@ -10,7 +10,7 @@ const projects = [
     techs: ['Vite', 'ShadcnUI', 'Zod', 'React Hook Form', 'Sonner'],
     name: 'Pizza Shop',
     description:
-      'Development of a modern web platform for pizzerias, featuring online ordering, menu management, and delivery control. Includes a responsive interface for customers and an administrative dashboard. Implementation of an authentication system for both customers and administrators, ensuring security and access control',
+      'Development of a modern web platform for pizzerias, featuring online ordering, menu management, and delivery control. Includes a responsive interface for customers and an administrative dashboard. Implementation of an authentication system for both customers and administrators',
     code: 'https://github.com/caiovellani/pizza.shop',
   },
   {
