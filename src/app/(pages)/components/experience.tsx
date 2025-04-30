@@ -15,7 +15,7 @@ export function Experience() {
   return (
     <section
       id="experience"
-      className="min-h-screen w-full container mx-auto items-center p-4"
+      className="w-full mb-36 container mx-auto items-center p-4"
     >
       <div className="flex flex-col items-center justify-center p-4">
         <h1 className="text-[48px] font-bold xl:text-[80px]">Experience</h1>
