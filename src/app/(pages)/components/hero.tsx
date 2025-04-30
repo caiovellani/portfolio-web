@@ -21,7 +21,7 @@ export function Hero() {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Software Developer</span>
-            <h1 className="h1 mb-6">
+            <h1 className="text-4xl font-semibold leading-[1.1] xl:text-[80px] mb-2 xl:mb-6">
               Hello I'm <br />
               <span className="text-accent inline-block min-w-[150px]">
                 {typedName}
