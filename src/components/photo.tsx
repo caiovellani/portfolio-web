@@ -14,8 +14,8 @@ export function Photo() {
         xmlns="http://www.w3.org/2000/svg"
       >
         <motion.circle
-          cx="253"
-          cy="253"
+          cx="255"
+          cy="255"
           r="220"
           stroke="#00FF99"
           strokeWidth="6"
@@ -49,7 +49,7 @@ export function Photo() {
           height={400}
           width={400}
           quality={100}
-          className="object-contain mx-3 my-6"
+          className="object-contain mx-5 my-6"
         />
       </motion.div>
     </div>
