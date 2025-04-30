@@ -22,7 +22,7 @@ export function Hero() {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Software Developer</span>
             <h1 className="text-4xl font-semibold leading-[1.1] xl:text-[80px] mb-2 xl:mb-6">
-              Hello I'm <br />
+              Hello I&apos;m <br />
               <span className="text-accent inline-block min-w-[150px]">
                 {typedName}
                 <span className="animate-pulse">|</span>

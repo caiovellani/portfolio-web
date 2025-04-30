@@ -32,7 +32,7 @@ export function Contact() {
     resolver: zodResolver(contactSchema),
   })
 
-  async function onSubmit(data: ContactFormData) {
+  async function onSubmit() {
     if (!formRef.current) return
 
     try {
@@ -63,8 +63,8 @@ export function Contact() {
             Contato
           </h1>
           <p className="text-center font-medium text-zinc-50/60 mt-4 leading-tight md:leading-relaxed">
-            Feel free to reach out if you have any questions or if there's an
-            opportunity where I can add value!
+            Feel free to reach out if you have any questions or if there&apos;s
+            an opportunity where I can add value!
           </p>
         </div>
 
