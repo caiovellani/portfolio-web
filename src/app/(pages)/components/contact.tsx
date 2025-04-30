@@ -60,7 +60,7 @@ export function Contact() {
       <div className="flex flex-col items-center justify-center min-h-screen p-4 w-full">
         <div className="p-4 mb-12">
           <h1 className="text-[48px] xl:text-[80px] leading-[1.1] font-semibold text-center">
-            Contato
+            Contact
           </h1>
           <p className="text-center font-medium text-zinc-50/60 mt-4 leading-tight md:leading-relaxed">
             Feel free to reach out if you have any questions or if there&apos;s
