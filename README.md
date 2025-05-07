@@ -4,7 +4,7 @@ This is the repository for my personal portfolio, where I showcase my projects, 
 
 ## Preview
 
-![Preview](preview.png)
+![Preview](https://github.com/caiovellani/portfolio-web/raw/main/public/preview.png)
 
 You can check out the live version of the portfolio [here](https://caiovellani.com).
 
